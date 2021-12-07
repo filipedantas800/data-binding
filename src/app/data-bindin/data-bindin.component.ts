@@ -16,8 +16,8 @@ export class DataBindinComponent implements OnInit {
   valorSalvo = '';
 
   isMouseOver: boolean = false;
-  
-  nome:string = 'abc';
+
+  nome: string = 'abc';
 
   pessoa: any = {
     nome: 'def',
@@ -25,6 +25,8 @@ export class DataBindinComponent implements OnInit {
   }
 
   nomeDoCurso: string = 'Angular';
+
+  valorInicial = 15;
 
   getValor() {
     return 1;
@@ -38,18 +40,23 @@ export class DataBindinComponent implements OnInit {
     alert('Botão clicado!');
   }
 
-  onKeyUp(evento: KeyboardEvent){
+  onKeyUp(evento: KeyboardEvent) {
     // console.log((<HTMLInputElement>evento.target).value);
     this.valorAtual = ((<HTMLInputElement>evento.target).value);
-    
+
   }
 
-  salvarValor(valor: string){
+  salvarValor(valor: string) {
     this.valorSalvo = valor;
   }
 
-  onMouseOverOut(){
+  onMouseOverOut() {
     this.isMouseOver = !this.isMouseOver;
+  }
+
+  onMudouValor(evento: any) {
+    console.log(evento.novoValor);
+
   }
 
   constructor() { }

@@ -7,12 +7,16 @@ import { DataBindinComponent } from './data-bindin/data-bindin.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { InputPropertyComponent } from './input-property/input-property.component';
+import { OutputPropertyComponent } from './output-property/output-property.component';
+import { CicloComponent } from './ciclo/ciclo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DataBindinComponent,
-    InputPropertyComponent
+    InputPropertyComponent,
+    OutputPropertyComponent,
+    CicloComponent
   ],
   imports: [
     BrowserModule,
